@@ -1,0 +1,24 @@
+app:
+  name: Config App
+  description: This is my app name ${app.name}     
+      
+my:
+  greeting: Hello from local
+  list:
+    values: one,two,three
+db:
+  connection: connection-string-here
+  host: 127.0.0.1
+  port: 5555
+  
+server:
+  port: 8051
+spring:
+  cloud.config.uri: http://localhost:8888
+  application.name: spring-boot-config
+  
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
